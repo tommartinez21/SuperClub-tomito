@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <!--%- include('/partials/header') %-->
+
+    <div class="cart-container">
+      <p>← Volver</p>
+      <h2>Productos en tu Carrito</h2>
+      <article class="cart-product-flex">
+        <div class="cart-descripcion-flex">
+          <img src="/public/alfajor.png" alt="" srcset="" />
+          <span>Alfajores Havanna Chocolate 12 Unidades</span>
+        </div>
+        <div class="cart-botones-flex">
+          <a class="b-quitar" href="#">Quitar</a>
+          <div class="cart-contador">
+            <a class="cont-restar" href="#"> - </a>
+            <span> 1 </span>
+            <a class="cont-sumar" href="#"> + </a>
+          </div>
+          <span class="cart-puntos">19.900</span>
+        </div>
+      </article>
+      <div class="cart-puntos-total">
+        <span>Total de Puntos SuperClub</span>
+        <span class="puntos">41.400</span>
+      </div>
+      <a class="b-quitar" href="/pagar">Ir a pagar</a>
+    </div>
+
+    <%- include('./views/partials/footer') %>
+  </body>
+</html>
