@@ -2,20 +2,22 @@
 <html lang="en">
 <%- include('../partials/head')%>
 
-    <body>
+    <body class="bodyregislog">
         <%- include('../partials/header-logo')%>
-            <div class="cuerpo-rojo"></div>
-            <div class="div-form">
-                <div class="div-adentro">
-                    <h2>¡Hola!</h2>
-                    <form method="get" action="/" class="formulario">
-                        <input type="text" name="nombreUsuario" id="nombreUsuario" placeholder="Tu nombre de usuario">
-                        <input type="password" name="contraseñaUsuarioLogin" id="contraseñaUsuarioLogin" placeholder="Tu contraseña">
-                        <button>Iniciar Sesión</button>
-                    </form>
+            <main>
+                <div class="cuerpo-rojo"></div>
+                <div class="div-form">
+                    <div class="div-adentro">
+                        <h2>¡Hola!</h2>
+                        <form method="get" action="/" class="formulario">
+                            <input type="text" name="nombreUsuario" id="nombreUsuario" placeholder="Tu nombre de usuario">
+                            <input type="password" name="contraseñaUsuarioLogin" id="contraseñaUsuarioLogin" placeholder="Tu contraseña">
+                            <button>Iniciar Sesión</button>
+                        </form>
+                    </div>
                 </div>
-            </div>
-            <p class="texto-abajo">¿No tienes cuenta? <a class="links" href="/register">Regístrate</a></p>
+                <p class="texto-abajo">¿No tienes cuenta? <a class="links" href="/register">Regístrate</a></p>
+            </main>
             <%- include('../partials/footer')%>
     </body>
 

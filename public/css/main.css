@@ -5,6 +5,16 @@
     font-family: "Open Sans", sans-serif;
 }
 
+.bodyregislog {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.bodyregislog>main {
+    flex-grow: 2;
+}
+
 main {
     width: 100%;
 }
