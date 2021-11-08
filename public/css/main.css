@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: rgb(153, 153, 153, 1);
+  --lightgrey: rgb(153, 153, 153, 1);
+  --grey: rgb(73, 79, 81, 1);
+  --red: rgb(236, 0, 0, 1);
+  --black: rgb(0, 0, 0, 1);
+}
+
+body {
+  background-color: grey;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
+footer {
+  color: var(--grey);
+  background: rgba(255, 255, 255, 0.25);
+  max-width: 1024px;
+  height: 64px;
+  backdrop-filter: blur(4px);
+  padding: 16px 0;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+}
+
+footer i {
+  font-size: 20px;
+}
