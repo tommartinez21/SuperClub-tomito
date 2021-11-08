@@ -1,5 +1,7 @@
 const express = require("express");
 const app = express();
+const productos = require("./public/products.js");
+
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 
@@ -9,7 +11,9 @@ app.get("/product/:id(\\d+)", (req, res) =>
   res.render("pages/product", { title: `Producto ${req.params.id}` })
 );
 
-app.get("/cart", (req, res) => res.render("pages/cart", { title: "Carrito" }));
+app.get("/cart", (req, res) =>
+  res.render("pages/cart", { productos, title: "Carrito" })
+);
 
 app.get("/checkout", (req, res) =>
   res.render("pages/checkout", { title: "Pago" })
