@@ -47,3 +47,8 @@
     font-weight: lighter;
     line-height: 8px;
 }
+
+.product-item-link {
+    text-decoration: none;
+    color: black;
+}

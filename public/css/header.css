@@ -6,12 +6,15 @@ header {
     padding: 20px 16px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 2px #ccc;
 }
 
 .search-bar input {
     width: 900px;
     height: 32px;
     border-radius: 16px;
+    border: solid 2px #ccc;
     padding: 8px 16px;
     color: rgba(0, 0, 0, 1);
     background: rgba(255, 255, 255, 1);
@@ -24,4 +27,70 @@ header {
     color: var(--grey);
     position: relative;
     right: 35px;
+}
+
+.header-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.cart-button {
+    width: 32px;
+    height: 32px;
+    background: rgba(73, 79, 81, 1);
+    border: none;
+    border-radius: 16px;
+    padding: 10px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.cart-button:hover {
+    background: rgba(236, 0, 0, 1);
+}
+
+.products-num {
+    border-radius: 8px;
+    width: 12px;
+    height: 8px;
+    font-size: 8px;
+    background: rgba(236, 0, 0, 1);
+    color: white;
+    position: relative;
+    bottom: 22px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-button {
+    width: auto;
+    height: 32px;
+    background: rgba(73, 79, 81, 1);
+    border: none;
+    border-radius: 16px;
+    padding: 4px 8px 4px 4px;
+    font-size: 15 px;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.user-button img {
+    width: 24px;
+    height: 24px;
+}
+
+.user-button:hover {
+    background: rgba(236, 0, 0, 1);
 }
