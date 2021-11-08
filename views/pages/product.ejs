@@ -1,37 +1,12 @@
 <%# agregar includes include('pages/partials/back') %>
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MeradoLiebre</title>
-
-    <!--- Iconos -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      rel="stylesheet"
-    />
-    <!--- Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <!--- Estilo -->
-    <link href="./css/styles.css" rel="stylesheet" />
-    <style>
-      .back a {
-        display: flex;
-        align-items: center;
-      }
-    </style>
-  </head>
+  <%- include('../partials/head') %>
   <body>
-    <main>
+    <%- include('../partials/header') %>
+    <main style="width: 75vw; margin: auto">
       <%# agregar comentario %>
-      <div class="back">
+      <div class="back-button">
         <a class="link">
           <i class="fas fa-arrow-left"></i>
           <p>Volver al listado</p>
@@ -40,6 +15,42 @@
           <%= categoria %> <% } %>
         </a>
       </div>
+      <div class="product-cardinfo">
+        <div class="product-galery">
+          <div class="galery-item">
+            <img src="/img/havanna4.jpg" alt="havana" />
+          </div>
+          <div class="galery-item">
+            <img src="/img/havanna2.jpg" alt="havana" />
+          </div>
+          <div class="galery-item">
+            <img src="/img/havanna1.jpg" alt="havana" />
+          </div>
+        </div>
+        <div class="product-image">
+        </div>
+        <div class="product-info">
+          <h3 class="product-title">Alfajores Havanna Chocolate 12 Unidades</h3>
+          <div class="product-valor">
+            <strong class="puntos">19.900</strong>
+            <p>PUNTOS SUPERCLUB</p>
+          </div>
+          <div class="btn-carrito">Agregar al Carrito</div>
+          <div class="product-description">
+            <p>Voucher válido para una caja de 12 alfajores mixtos Havanna.</br>
+            Para retirar el producto, sólo tenés que presentar el comprobante del canje en el local. Recordá que tus comprobantes de canje siempre quedan guardados en la opción “Detalle de puntos”. </p>
+            <p>El voucher no es válido para delivery pero sí para Take away.</p>
+            <p>No aplica para alfajores sabor “70 Cacao” o “Semilia”. </p>
+            <p>Consultá los locales con take away en https://ticketbox.com.ar/sucursales/havanna. </p>
+            <p>El canje del voucher se encuentra sujeto a disponibilidad del producto en el local. </p>
+            <p>No combinable con otras promociones. Vigencia hasta 28/02/2022 o hasta agotar stock.</p>
+          </div>
+        </div>
+      </div>
+      <h3>También te puede interesar</h3>
+        <%# includes nav products %>   
+        <%# includes nav categorias %>      
     </main>
+    <%- include('../partials/footer') %>
   </body>
 </html>

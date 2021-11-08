@@ -1,0 +1,41 @@
+/***** PRODUCTO *********/
+.product-cardinfo {
+  display: flex;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  border-radius: 16px;
+  padding: 10px;
+  margin-bottom: 40px;
+  gap: 10px;
+}
+
+.product-cardinfo > * {
+  border-radius: 8px;
+}
+
+.product-cardinfo .product-info {
+  border: 1px solid #cccccc;
+  padding: 10px;
+}
+
+.product-info {
+  width: 30%;
+}
+
+.product-image {
+  width: 60%;
+  background-image: url("/img/havanna1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.product-galery {
+  width: 10%;
+}
+.product-galery .galery-item img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+.product-galery .galery-item {
+  width: 48px;
+  height: 48px;
+}

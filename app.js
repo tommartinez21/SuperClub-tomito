@@ -6,7 +6,10 @@ app.set("view engine", "ejs");
 app.get("/", (req, res) => res.render("pages/index", { title: "Home" }));
 
 app.get("/product/:id(\\d+)", (req, res) =>
-  res.render("pages/product", { title: `Producto ${req.params.id}` })
+  res.render("pages/product", {
+    title: `Producto ${req.params.id}`,
+    categoria: "Alimentos",
+  })
 );
 
 app.get("/cart", (req, res) => res.render("pages/cart", { title: "Carrito" }));

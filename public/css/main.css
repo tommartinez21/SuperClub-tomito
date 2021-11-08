@@ -65,3 +65,8 @@ footer i {
 .apps i {
   padding-right: 8px;
 }
+
+.back-button a {
+  display: flex;
+  align-items: center;
+}
