@@ -18,24 +18,61 @@
   padding: 10px;
 }
 
-.product-info {
-  width: 30%;
-}
-
 .product-image {
-  width: 60%;
+  flex-basis: 55%;
   background-image: url("/img/havanna1.jpg");
   background-size: cover;
   background-position: center;
 }
+
 .product-galery {
-  width: 10%;
-}
-.product-galery .galery-item img {
-  max-width: 100%;
-  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .product-galery .galery-item {
   width: 48px;
   height: 48px;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+}
+
+.product-cardinfo .btn-carrito {
+  width: 100%;
+  background: #494f51;
+  border: none;
+  font-size: 12px;
+  color: white;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 16px;
+}
+
+.product-info {
+  flex-basis: 45%;
+}
+.product-info .product-title {
+  font-size: 24px;
+  font-weight: 400;
+}
+.product-info .product-valor {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.product-info .product-valor .puntos {
+  font-size: 40px;
+  font-weight: 700;
+}
+.product-info .product-valor p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.back-button a {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  gap: 10px;
 }
