@@ -37,6 +37,9 @@
   background-size: cover;
   background-position: center;
 }
+.product-galery .galery-item.active {
+  border: 2px solid #ec0000;
+}
 
 .product-cardinfo .btn-carrito {
   width: 100%;
