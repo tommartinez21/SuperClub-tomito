@@ -1,29 +1,87 @@
-.div-form {
-   display: flex;
-   justify-content: center;
-   flex-direction: column;
-   align-items: center;
-   border-color: red;
-   padding: 7%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.div-form h2 {
-    display: flex;
-    text-align: left;
+:root {
+  --white: rgb(153, 153, 153, 1);
+  --lightgrey: rgb(153, 153, 153, 1);
+  --grey: rgb(73, 79, 81, 1);
+  --red: rgb(236, 0, 0, 1);
+  --black: rgb(0, 0, 0, 1);
 }
 
-.formulario {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
+body {
+  background-color: grey;
 }
 
-.div-form input {
-    padding: 2%;
-    margin: 3%;
+html {
+  font-family: "Open Sans", sans-serif;
 }
 
-.div-form button{
-    padding: 3%;
-    margin: 3%;
+/* Header */
+
+header {
+  width: 100%;
+  height: 64px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  padding: 20px 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-bar input {
+  width: 900px;
+  height: 32px;
+  border-radius: 16px;
+  padding: 8px 16px;
+  color: rgba(0, 0, 0, 1);
+  background: rgba(255, 255, 255, 1);
+}
+
+.search-bar button {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  color: var(--grey);
+  position: relative;
+  right: 35px;
+}
+
+/* Footer */
+
+footer {
+  color: var(--grey);
+  background: rgba(255, 255, 255, 0.25);
+  width: 100%;
+  height: 64px;
+  backdrop-filter: blur(4px);
+  padding: 16px 0;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-around;
+  gap: 120px;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+}
+
+footer i {
+  font-size: 20px;
+}
+
+.social-networks {
+  display: flex;
+  gap: 23px;
+}
+
+.apps {
+  display: flex;
+  gap: 16px;
+}
+
+.apps i {
+  padding-right: 8px;
 }
