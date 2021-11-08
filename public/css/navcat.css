@@ -1,20 +1,27 @@
 .nav {
     background-color: #333333;
     display: flex;
-    width: 70%;
-    margin: 50px auto;
-    align-items: baseline;
-    padding: 20px;
-    border-radius: 15px;
-    padding-bottom: 25px;
+    max-width: 1024px;
+    height: 128px;
+    margin: 100px auto;
+    padding: 16px;
+    border-radius: 16px;
+    font-size: 16px;
+    justify-content: space-between;
 }
 
 .cont-icons-bar {
-    flex-grow: 1;
     display: flex;
+    flex-basis: 0;
+    flex-grow: 1;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     position: relative;
+}
+
+.cont-icons-bar img {
+    width: 40px;
 }
 
 .cont-icons-bar:not(:last-child)::after {
@@ -24,10 +31,10 @@
     background-color: white;
     position: absolute;
     right: 0;
+    bottom: 0;
 }
 
 .cont-icons-bar>* {
     color: white;
-    width: 40%;
     text-align: center;
 }

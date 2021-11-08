@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Open Sans;
+    font-family: "Open Sans", sans-serif;
 }
 
 main {
@@ -15,21 +15,25 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 256px;
 }
 
 .products-heroes {
     display: flex;
-    width: 30%;
-    height: 250px;
-    border-radius: 20px;
+    width: 26%;
+    height: 256px;
+    padding: 8px;
+    border-radius: 16px;
     background-size: cover;
     background-repeat: no-repeat;
     align-items: flex-end;
     color: white;
+    margin-top: -50px;
 }
 
 .products-heroes:first-child {
     background-image: url('/imgs/disneybg.jpg');
+    margin-right: 15px;
 }
 
 .products-heroes:last-child {
@@ -37,14 +41,16 @@ main {
 }
 
 .icon-brand {
-    width: 100px;
-    border-radius: 10px;
+    width: 112px;
+    margin-right: 16px;
 }
 
 .icon-brand img {
     width: 100%;
+    border-radius: 16px;
 }
 
 .products-heroes span {
     font-weight: bold;
+    font-size: 20px;
 }
