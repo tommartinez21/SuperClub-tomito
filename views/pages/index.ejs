@@ -30,6 +30,19 @@
                             </div>
                         </div>
                     </div>
+
+                    <%- include("../partials/tepuedeinteresar") %>
+
+                        <div class="maspedidos cont-products-items">
+                            <h3>Más pedidos</h3>
+                            <div>
+                                <% for (let i=0;i<8;i++){ %>
+                                    <%- include("../partials/product-item") %>
+                                        <% } %>
+                            </div>
+                        </div>
+
+                        <%- include("../partials/navcat") %>
         </main>
         <%- include('../partials/footer') %>
     </body>
