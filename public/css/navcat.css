@@ -1,0 +1,33 @@
+.nav {
+    background-color: #333333;
+    display: flex;
+    width: 70%;
+    margin: 50px auto;
+    align-items: baseline;
+    padding: 20px;
+    border-radius: 15px;
+    padding-bottom: 25px;
+}
+
+.cont-icons-bar {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.cont-icons-bar:not(:last-child)::after {
+    content: '';
+    width: 2px;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    right: 0;
+}
+
+.cont-icons-bar>* {
+    color: white;
+    width: 40%;
+    text-align: center;
+}

@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Open Sans;
+}
+
+main {
+    width: 100%;
+}
+
+.cont-product-heroes {
+    width: 100%;
+    background-color: #EC0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products-heroes {
+    display: flex;
+    width: 30%;
+    height: 250px;
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: flex-end;
+    color: white;
+}
+
+.products-heroes:first-child {
+    background-image: url('/imgs/disneybg.jpg');
+}
+
+.products-heroes:last-child {
+    background-image: url('/imgs/hbobg.jpg');
+}
+
+.icon-brand {
+    width: 100px;
+    border-radius: 10px;
+}
+
+.icon-brand img {
+    width: 100%;
+}
+
+.products-heroes span {
+    font-weight: bold;
+}
