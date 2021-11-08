@@ -50,6 +50,32 @@ header {
   right: 35px;
 }
 
+.cart-button {
+  width: 32px;
+  height: 32px;
+  background: rgba(73, 79, 81, 1);
+  border-radius: 16px;
+  padding: 8px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 12px;
+  text-align: center;
+}
+
+.products-num {
+  border-radius: 8px;
+  width: 12px;
+  height: 8px;
+  font-size: 8px;
+  background: rgba(236, 0, 0, 1);
+  color: white;
+  position: relative;
+  bottom: 32px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Footer */
 
 footer {
