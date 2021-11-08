@@ -1,3 +1,11 @@
+:root {
+    --white: rgb(255, 255, 255, 1);
+    --lightgrey: rgb(200, 200, 200, 1);
+    --grey: rgb(73, 79, 81, 1);
+    --red: rgb(236, 0, 0, 1);
+    --black: rgb(0, 0, 0, 1);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,13 +13,11 @@
     font-family: "Open Sans", sans-serif;
 }
 
-.bodyregislog {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+body {
+    background-color: var(--lightgrey);
 }
 
-.bodyregislog>main {
+.bodyfix>main {
     flex-grow: 1;
 }
 
