@@ -37,6 +37,7 @@
   aspect-ratio: 1;
   width: 50px;
   object-fit: cover;
+  transition: all 300ms;
 }
 
 .cart-product-title {
@@ -76,10 +77,12 @@
   font-weight: bold;
   text-decoration: none;
   color: black;
+  cursor: pointer;
 }
 
 .button-pagar {
   text-align: right;
+  margin-bottom: 2rem;
 }
 
 .boton {
@@ -91,10 +94,26 @@
   border-radius: 18px;
   text-decoration: none;
   transition: all 300ms;
+  cursor: pointer;
 }
 
 .boton:hover {
   background-color: var(--red);
+}
+
+.div-cupon {
+  width: 50%;
+  position: relative;
+  right: -47%;
+}
+
+#cupon {
+  padding: 0.5rem;
+  margin: 0 1rem 1rem;
+  width: 100%;
+  text-align: right;
+  border-radius: 20px;
+  border: solid 2px #ccc;
 }
 
 @media (max-width: 900px) {
@@ -126,6 +145,7 @@
     transition: padding 0ms;
   }
 }
+
 @media (max-width: 600px) {
   .cart-product-title {
     position: relative;

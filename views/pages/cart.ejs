@@ -54,12 +54,11 @@
             <span class="cart-product-title"><%= producto.title %></span>
           </div>
           <div class="cart-botones-flex">
-            <a class="boton" href="#">Quitar</a>
+            <a class="boton">Quitar</a>
             <div class="cart-contador">
               <a
                 class="cont-operador"
                 onclick="restarContador('<%= producto.id %>', '<%= producto.price %>')"
-                href="#"
               >
                 -
               </a>
@@ -69,7 +68,6 @@
               <a
                 class="cont-operador"
                 onclick="sumarContador('<%= producto.id %>', '<%= producto.price %>')"
-                href="#"
               >
                 +
               </a>
@@ -86,6 +84,14 @@
           <span class="cart-puntos" id="precioTotal"
             ><%= new Intl.NumberFormat().format(preciofinal) %></span
           >
+        </div>
+        <div class="div-cupon">
+          <input
+            type="text"
+            name="cupon"
+            id="cupon"
+            placeholder="Ingresá tu cupón de descuento"
+          />
         </div>
         <div class="button-pagar">
           <a class="boton" href="/checkout">Ir a Pagar</a>
