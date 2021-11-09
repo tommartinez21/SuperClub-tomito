@@ -126,3 +126,8 @@ main {
 .tepuedeinteresar {
     margin-bottom: 30px;
 }
+
+.link-volver {
+    text-decoration: none;
+    color: black;
+}
