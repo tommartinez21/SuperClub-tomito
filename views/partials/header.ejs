@@ -1,22 +1,33 @@
 <header>
-  <a href="/"
-    ><img src="/imgs/santanderLogo.svg" alt="Logo Santander" width="136"
-  /></a>
+  <div class="header-flex">
+    <a href="/"
+      ><img src="/imgs/santanderLogo.svg" alt="Logo Santander" width="136"
+    /></a>
 
-  <form class="search-bar" action="/" method="get">
+    <form class="search-bar sb-big" action="/" method="get">
+      <input
+        type="text"
+        name="search"
+        id=""
+        placeholder="Buscar productos..."
+      />
+      <button><i class="fas fa-search"></i></button>
+    </form>
+
+    <div class="header-buttons">
+      <a href="/cart">
+        <button class="cart-button">
+          <i class="fas fa-shopping-cart"></i>
+          <div class="products-num">2</div>
+        </button>
+      </a>
+      <button class="user-button">
+        <img src="/imgs/perfil.png" alt="Imagen de perfil" /> Olivia
+      </button>
+    </div>
+  </div>
+  <form class="search-bar sb-responsive" action="/" method="get">
     <input type="text" name="search" id="" placeholder="Buscar productos..." />
     <button><i class="fas fa-search"></i></button>
   </form>
-
-  <div class="header-buttons">
-    <a href="/cart">
-      <button class="cart-button">
-        <i class="fas fa-shopping-cart"></i>
-        <div class="products-num">2</div>
-      </button>
-    </a>
-    <button class="user-button">
-      <img src="/imgs/perfil.png" alt="Imagen de perfil" /> Olivia
-    </button>
-  </div>
 </header>
