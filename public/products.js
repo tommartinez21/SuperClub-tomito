@@ -11,14 +11,14 @@ const productos = [
     title: "1 Combo Mega Cuarto Deluxe en Mostaza",
     price: 10000,
     cantidad: 1,
-    image: "havanna2.jpg",
+    image: "mostaza1.jpg",
   },
   {
     id: 3,
     title: "Voucher de $400 en Plataforma 10",
     price: 11500,
     cantidad: 1,
-    image: "havanna3.webp",
+    image: "plataforma101.jpg",
   },
 ];
 
