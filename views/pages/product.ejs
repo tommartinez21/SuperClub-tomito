@@ -9,16 +9,18 @@
       <div class="page-product-cardinfo">
         <div class="page-product-galery">
           <% (producto.imgs).forEach(img => { %>
-          <div
-            class="galery-item"
-            style="background-image: url('<%= /imgs/+img %> ')"
-          ></div>
+          <div class="galery-item">
+            <img src="<%= /imgs/+img %> " alt="<%= producto.title %> " />
+          </div>
           <% }) %>
         </div>
-        <div
-          class="page-product-image"
-          style="background-image: url('<%= /imgs/+producto.imgs[1] %> ')"
-        ></div>
+
+        <div class="page-product-image">
+          <img
+            src="<%= /imgs/+producto.imgs[0] %> "
+            alt="<%= producto.title %> "
+          />
+        </div>
         <div class="page-product-info">
           <h3 class="page-product-title"><%=producto.title%></h3>
           <div class="page-product-valor">
