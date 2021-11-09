@@ -1,8 +1,8 @@
 const express = require("express");
 const app = express();
-const productos = require("./public/products.js");
 let preciofinal = 0;
 
+const productos = require("./public/products.js");
 const producto = require("./public/product.js");
 
 app.use(express.static("public"));
@@ -18,7 +18,11 @@ app.get("/product/:id(\\d+)", (req, res) =>
 );
 
 app.get("/cart", (req, res) =>
-  res.render("pages/cart", { productos, preciofinal, title: "Carrito" })
+  res.render("pages/cart", {
+    productos,
+    preciofinal,
+    title: "Carrito",
+  })
 );
 
 app.get("/checkout", (req, res) =>
