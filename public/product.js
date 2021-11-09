@@ -3,7 +3,7 @@ const producto = {
   categoria: "Alimentos",
   title: "Alfajores Havanna Chocolate 12 Unidades",
   price: "19900",
-  imgs: ["havanna1.jpg", "havanna2.jpg", "havanna4.jpg"],
+  imgs: ["havanna2.jpg", "havanna1.jpg", "havanna4.jpg"],
   descripcion: [
     "Voucher válido para una caja de 12 alfajores mixtos Havanna.",
     "Para retirar el producto, sólo tenés que presentar el comprobante del canje en el local. Recordá que tus comprobantes de canje siempre quedan guardados en la opción “Detalle de puntos”.",

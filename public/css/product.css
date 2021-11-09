@@ -25,9 +25,11 @@
 }
 
 .page-product-image {
-    width: 640px;
+    <<<<<<< HEAD width: 640px;
     background-size: cover;
     background-position: center;
+    =======width: 640px;
+    >>>>>>>origin/iona
 }
 
 .page-product-galery {
@@ -38,12 +40,25 @@
 }
 
 .page-product-galery .galery-item {
-    width: 48px;
+    <<<<<<< HEAD width: 48px;
     height: 48px;
     border-radius: 8px;
     background-size: cover;
     background-position: center;
     transition: all 200ms;
+    =======width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    transition: all 200ms;
+    >>>>>>>origin/iona
+}
+
+.page-product-galery .galery-item img,
+.page-product-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
 }
 
 .page-product-galery .galery-item:hover {
@@ -124,4 +139,10 @@
     align-items: center;
     margin: 15px 0;
     gap: 10px;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.back-button a:hover {
+    color: var(--grey);
 }
