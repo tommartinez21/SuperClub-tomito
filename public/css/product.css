@@ -1,11 +1,8 @@
 /***** PRODUCTO *********/
 
-.page-product-main {
-    width: 1024px;
-    margin: auto;
-}
-
 .page-product-cardinfo {
+    max-width: 1024px;
+    margin: 0 auto;
     background: #ffffff;
     display: flex;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
@@ -25,11 +22,7 @@
 }
 
 .page-product-image {
-    <<<<<<< HEAD width: 640px;
-    background-size: cover;
-    background-position: center;
-    =======width: 640px;
-    >>>>>>>origin/iona
+    width: 640px;
 }
 
 .page-product-galery {
@@ -40,17 +33,10 @@
 }
 
 .page-product-galery .galery-item {
-    <<<<<<< HEAD width: 48px;
-    height: 48px;
-    border-radius: 8px;
-    background-size: cover;
-    background-position: center;
-    transition: all 200ms;
-    =======width: 48px;
+    width: 48px;
     height: 48px;
     border-radius: 8px;
     transition: all 200ms;
-    >>>>>>>origin/iona
 }
 
 .page-product-galery .galery-item img,
@@ -132,6 +118,11 @@
     .page-product-galery {
         flex-direction: row;
     }
+}
+
+.back-button {
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
 .back-button a {
