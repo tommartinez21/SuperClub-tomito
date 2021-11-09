@@ -51,7 +51,7 @@
               alt="<%=producto.title%>"
               class="cart-product-img"
             />
-            <span class="product-title"><%= producto.title %></span>
+            <span class="cart-product-title"><%= producto.title %></span>
           </div>
           <div class="cart-botones-flex">
             <a class="boton" href="#">Quitar</a>
@@ -82,7 +82,7 @@
         <% preciofinal += producto.price }) } %>
 
         <div class="cart-puntos-total">
-          <span class="cart-descripcion">Total de Puntos SuperClub</span>
+          <span class="cart-descripcion-final">Total de Puntos SuperClub</span>
           <span class="cart-puntos" id="precioTotal"
             ><%= new Intl.NumberFormat().format(preciofinal) %></span
           >
