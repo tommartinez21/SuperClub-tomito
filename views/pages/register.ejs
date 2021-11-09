@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head')%>
+
+    <body class="bodyfix">
+        <%- include('../partials/header-logo')%>
+            <main>
+                <div class="cuerpo-rojo"></div>
+                <div class="div-form">
+                    <div class="div-adentro">
+                        <h2>¡Registrate!</h2>
+                        <form method="get" action="/" class="formulario">
+                            <input type="email" name="emailUsuario" id="emailUsuario" placeholder="Tu email">
+                            <input type="password" name="contraseñaUsuario" id="contraseñaUsuario" placeholder="Tu nueva contraseña">
+                            <input type="password" name="contraseñaUsuarioRepetida" id="contraseñaUsuarioRepetida" placeholder="Repite tu contraseña">
+                            <button>Crear Cuenta</button>
+                        </form>
+                    </div>
+                </div>
+                <p class="texto-abajo">¿Ya tienes cuenta? <a class="links" href="/login">Inicia sesión</a></p>
+            </main>
+            <%- include('../partials/footer')%>
+    </body>
+
+</html>

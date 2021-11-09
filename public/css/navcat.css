@@ -1,0 +1,40 @@
+.nav {
+    background-color: #333333;
+    display: flex;
+    max-width: 1024px;
+    height: 128px;
+    margin: 60px auto;
+    padding: 16px;
+    border-radius: 16px;
+    font-size: 16px;
+    justify-content: space-between;
+}
+
+.cont-icons-bar {
+    display: flex;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.cont-icons-bar img {
+    width: 40px;
+}
+
+.cont-icons-bar:not(:last-child)::after {
+    content: '';
+    width: 2px;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.cont-icons-bar>* {
+    color: white;
+    text-align: center;
+}
