@@ -31,6 +31,8 @@ app.get("/register", (req, res) =>
 
 app.get("/login", (req, res) => res.render("pages/login", { title: "Login" }));
 
-app.get("/error", (req, res) => res.render("pages/error", { title: "404 !" }));
+app.get("*", (req, res) =>
+  res.status(404).render("pages/error", { title: "404 !" })
+);
 
 app.listen(3000, () => console.log("toy ready"));
