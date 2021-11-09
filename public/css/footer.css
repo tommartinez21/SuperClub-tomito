@@ -6,13 +6,15 @@ footer {
   backdrop-filter: blur(4px);
   padding: 16px 0;
   font-size: 12px;
-  display: flex;
-  justify-content: space-around;
   gap: 120px;
   align-items: center;
   border-top: solid 2px #ccc;
-  position: absolute;
-  bottom: 0;
+}
+
+.footer-responsive {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 footer i {
@@ -40,4 +42,15 @@ footer i {
   gap: 8px;
   color: #999;
   text-decoration: none;
+}
+
+.copyright-down {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+.copyright-up {
+  display: none;
+  width: 25%;
 }

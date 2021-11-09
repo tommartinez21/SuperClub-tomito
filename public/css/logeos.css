@@ -62,5 +62,5 @@
 
 .cuerpo-rojo {
   height: 250px;
-  background-color: #ec0000;
+  background-color: var(--red);
 }
