@@ -3,6 +3,36 @@
   <%- include('../partials/head') %>
 
   <body class="bodyfix">
+    <script>
+      contador = 0;
+
+      const sumarContador = (id, precio) => {
+        const contador = document.getElementById("contador" + id);
+        const puntos = document.getElementById("puntos" + id);
+        const precioTotal = document.getElementById("precioTotal");
+        contador.innerHTML = parseInt(contador.innerHTML) + 1;
+        let precioSumado = parseInt(puntos.innerHTML.replace(".", "")) + precio;
+        puntos.innerHTML = new Intl.NumberFormat().format(precioSumado);
+        let puntosTotales =
+          parseInt(precioTotal.innerHTML.replace(".", "")) + precio;
+        precioTotal.innerHTML = new Intl.NumberFormat().format(puntosTotales);
+      };
+
+      const restarContador = (id, precio) => {
+        const contador = document.getElementById("contador" + id);
+        const puntos = document.getElementById("puntos" + id);
+        const precioTotal = document.getElementById("precioTotal");
+        if (contador.innerHTML > 0) {
+          contador.innerHTML = parseInt(contador.innerHTML) - 1;
+          let precioRestado =
+            parseInt(puntos.innerHTML.replace(".", "")) - precio;
+          puntos.innerHTML = new Intl.NumberFormat().format(precioRestado);
+          let puntosTotales =
+            parseInt(precioTotal.innerHTML.replace(".", "")) - precio;
+          precioTotal.innerHTML = new Intl.NumberFormat().format(puntosTotales);
+        }
+      };
+    </script>
     <%- include('../partials/header') %>
 
     <main>
@@ -10,7 +40,8 @@
         <%- include('../partials/volver') %>
         <h3 class="categoria-cart">Productos en tu Carrito</h3>
 
-        <% if (productos) { preciofinal = 0; productos.forEach(producto => { %>
+        <% if (productos) { preciofinal = 0; contador = 0;
+        productos.forEach(producto => { %>
         <article class="cart-product-flex">
           <div class="cart-descripcion-flex">
             <img
@@ -23,11 +54,25 @@
           <div class="cart-botones-flex">
             <a class="boton" href="#">Quitar</a>
             <div class="cart-contador">
-              <a class="cont-operador" href="#"> - </a>
-              <span><%= producto.cantidad %></span>
-              <a class="cont-operador" href="#"> + </a>
+              <a
+                class="cont-operador"
+                onclick="restarContador(<%= producto.id %>, <%= producto.price %>)"
+                href="#"
+              >
+                -
+              </a>
+              <span id="contador<%= producto.id %>"
+                ><%= producto.cantidad %></span
+              >
+              <a
+                class="cont-operador"
+                onclick="sumarContador(<%= producto.id %>, <%= producto.price %>)"
+                href="#"
+              >
+                +
+              </a>
             </div>
-            <span class="cart-puntos"
+            <span class="cart-puntos" id="puntos<%= producto.id %>"
               ><%= new Intl.NumberFormat().format(producto.price) %></span
             >
           </div>
@@ -36,7 +81,7 @@
 
         <div class="cart-puntos-total">
           <span class="cart-descripcion">Total de Puntos SuperClub</span>
-          <span class="cart-puntos"
+          <span class="cart-puntos" id="precioTotal"
             ><%= new Intl.NumberFormat().format(preciofinal) %></span
           >
         </div>
