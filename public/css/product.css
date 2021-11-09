@@ -36,8 +36,15 @@
   border-radius: 8px;
   background-size: cover;
   background-position: center;
+  transition: all 200ms;
 }
-.product-galery .galery-item.active {
+
+.product-galery .galery-item:hover {
+  filter: opacity(80%);
+  transform: scale(1.1);
+}
+
+.product-galery .galery-item:first-child {
   border: 2px solid #ec0000;
 }
 
@@ -50,6 +57,11 @@
   font-weight: 400;
   padding: 10px;
   border-radius: 16px;
+  transition: all 200ms;
+}
+
+.product-cardinfo .btn-carrito:hover {
+  background: #ec0000;
 }
 
 .product-info {

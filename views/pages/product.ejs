@@ -17,18 +17,12 @@
       </div>
       <div class="product-cardinfo">
         <div class="product-galery">
+          <% (producto.imgs).forEach(img => { %>
           <div
             class="galery-item"
-            style="background-image: url('<%= '/img/'+producto.imgs[2] %> ')"
+            style="background-image: url('<%= /img/+img %> ')"
           ></div>
-          <div
-            class="galery-item active"
-            style="background-image: url('<%= '/img/'+producto.imgs[1] %> ')"
-          ></div>
-          <div
-            class="galery-item"
-            style="background-image: url('<%= '/img/'+producto.imgs[0] %> ')"
-          ></div>
+          <% }) %>
         </div>
         <div class="product-image"></div>
         <div class="product-info">
