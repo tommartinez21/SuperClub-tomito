@@ -5,28 +5,19 @@
   <body>
     <%- include('../partials/header') %>
     <main class="page-product-main">
-      <%# include("../partials/back") %>
-      <div class="back-button">
-        <a class="link">
-          <i class="fas fa-arrow-left"></i>
-          <p>Volver al listado</p>
-          <% if (producto.categoria) { %>
-          <i class="fas fa-chevron-right"></i>
-          <%= producto.categoria %> <% } %>
-        </a>
-      </div>
+      <%- include('../partials/back', {categoria:producto.categoria}) %>
       <div class="page-product-cardinfo">
         <div class="page-product-galery">
           <% (producto.imgs).forEach(img => { %>
           <div
             class="galery-item"
-            style="background-image: url('<%= /img/+img %> ')"
+            style="background-image: url('<%= /imgs/+img %> ')"
           ></div>
           <% }) %>
         </div>
         <div
           class="page-product-image"
-          style="background-image: url('<%= /img/+producto.imgs[1] %> ')"
+          style="background-image: url('<%= /imgs/+producto.imgs[1] %> ')"
         ></div>
         <div class="page-product-info">
           <h3 class="page-product-title"><%=producto.title%></h3>

@@ -122,4 +122,10 @@
   align-items: center;
   margin: 15px 0;
   gap: 10px;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.back-button a:hover {
+  color: var(--grey);
 }
