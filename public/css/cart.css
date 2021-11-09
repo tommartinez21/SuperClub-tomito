@@ -83,4 +83,9 @@
   background-color: var(--grey);
   border-radius: 18px;
   text-decoration: none;
+  transition: all 300ms;
+}
+
+.boton:hover {
+  background-color: var(--red);
 }
