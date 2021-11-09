@@ -73,4 +73,11 @@
 .product-item-link {
     text-decoration: none;
     color: black;
+    display: block;
+}
+
+@media (max-width:1024px) {
+    .product-item:hover {
+        animation-name: none;
+    }
 }

@@ -48,3 +48,10 @@
     text-align: center;
     transition: transform 0.3s, color 0.3s, fill 0.3s;
 }
+
+@media (max-width:1024px) {
+    .nav {
+        display: none;
+        flex-direction: column;
+    }
+}

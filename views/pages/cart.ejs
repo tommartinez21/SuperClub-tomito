@@ -1,34 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <%- include('../partials/head') %>
+<%- include('../partials/head') %>
 
-  <body class="bodyfix">
-    <%- include('../partials/header') %>
+    <body>
+        <%- include('../partials/header') %>
 
-    <main>
-      <div class="cart-container">
-        <%- include('../partials/volver') %>
-        <h3 class="categoria-cart">Productos en tu Carrito</h3>
+            <main>
+                <div class="cart-container">
+                    <%- include('../partials/volver') %>
+                        <h3 class="categoria-cart">Productos en tu Carrito</h3>
 
-        <% if (productos) { preciofinal = 0; productos.forEach(producto => { %>
-        <article class="cart-product-flex">
-          <div class="cart-descripcion-flex">
-            <img
-              src="/imgs/<%= producto.image %>"
-              alt="<%=producto.title%>"
-              class="cart-product-img"
-            />
-            <span class="product-title"><%= producto.title %></span>
-          </div>
-          <div class="cart-botones-flex">
-            <a class="boton" href="#">Quitar</a>
-            <div class="cart-contador">
-              <a class="cont-operador" href="#"> - </a>
-              <span><%= producto.cantidad %></span>
-              <a class="cont-operador" href="#"> + </a>
-            </div>
-            <span class="cart-puntos"
-              ><%= new Intl.NumberFormat().format(producto.price) %></span
+                        <% if (productos) { preciofinal = 0; productos.forEach(producto => { %>
+                            <article class="cart-product-flex">
+                                <div class="cart-descripcion-flex">
+                                    <img src="/imgs/<%= producto.image %>" alt="<%=producto.title%>" class="cart-product-img" />
+                                    <span class="product-title"><%= producto.title %></span>
+                                </div>
+                                <div class="cart-botones-flex">
+                                    <a class="boton" href="#">Quitar</a>
+                                    <div class="cart-contador">
+                                        <a class="cont-operador" href="#"> - </a>
+                                        <span><%= producto.cantidad %></span>
+                                        <a class="cont-operador" href="#"> + </a>
+                                    </div>
+                                    <span class="cart-puntos"><%= new Intl.NumberFormat().format(producto.price) %></span
             >
           </div>
         </article>
@@ -36,8 +31,7 @@
 
         <div class="cart-puntos-total">
           <span class="cart-descripcion">Total de Puntos SuperClub</span>
-          <span class="cart-puntos"
-            ><%= new Intl.NumberFormat().format(preciofinal) %></span
+                                    <span class="cart-puntos"><%= new Intl.NumberFormat().format(preciofinal) %></span
           >
         </div>
         <div class="button-pagar">
