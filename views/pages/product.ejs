@@ -4,7 +4,7 @@
   <%- include('../partials/head') %>
   <body>
     <%- include('../partials/header') %>
-    <main style="width: 75vw; margin: auto">
+    <main class="product-main">
       <%# include("../partials/back") %>
       <div class="back-button">
         <a class="link">
@@ -24,7 +24,10 @@
           ></div>
           <% }) %>
         </div>
-        <div class="product-image"></div>
+        <div
+          class="product-image"
+          style="background-image: url('<%= /img/+producto.imgs[1] %> ')"
+        ></div>
         <div class="product-info">
           <h3 class="product-title"><%=producto.title%></h3>
           <div class="product-valor">
@@ -39,7 +42,7 @@
           </div>
         </div>
       </div>
-      <%- include("../partials/tepuedeinteresar") %> <%-
+      <%# include("../partials/tepuedeinteresar") %> <%#
       include("../partials/navcat") %>
     </main>
     <%- include('../partials/footer') %>
