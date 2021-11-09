@@ -7,6 +7,7 @@
       contador = 0;
 
       const sumarContador = (id, precio) => {
+        precio = parseInt(precio);
         const contador = document.getElementById("contador" + id);
         const puntos = document.getElementById("puntos" + id);
         const precioTotal = document.getElementById("precioTotal");
@@ -19,6 +20,7 @@
       };
 
       const restarContador = (id, precio) => {
+        precio = parseInt(precio);
         const contador = document.getElementById("contador" + id);
         const puntos = document.getElementById("puntos" + id);
         const precioTotal = document.getElementById("precioTotal");
@@ -56,7 +58,7 @@
             <div class="cart-contador">
               <a
                 class="cont-operador"
-                onclick="restarContador(<%= producto.id %>, <%= producto.price %>)"
+                onclick="restarContador('<%= producto.id %>', '<%= producto.price %>')"
                 href="#"
               >
                 -
@@ -66,7 +68,7 @@
               >
               <a
                 class="cont-operador"
-                onclick="sumarContador(<%= producto.id %>, <%= producto.price %>)"
+                onclick="sumarContador('<%= producto.id %>', '<%= producto.price %>')"
                 href="#"
               >
                 +
