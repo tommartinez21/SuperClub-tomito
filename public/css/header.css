@@ -52,7 +52,7 @@ header {
 }
 
 .cart-button:hover {
-    background: rgba(236, 0, 0, 1);
+    background: var(--red);
 }
 
 .products-num {
@@ -60,7 +60,7 @@ header {
     width: 12px;
     height: 8px;
     font-size: 8px;
-    background: rgba(236, 0, 0, 1);
+    background: var(--red);
     color: white;
     position: relative;
     bottom: 22px;

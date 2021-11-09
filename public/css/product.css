@@ -41,7 +41,7 @@
 }
 
 .page-product-galery .galery-item.active {
-    border: 2px solid #ec0000;
+    border: 2px solid var(--red);
 }
 
 .page-product-cardinfo .btn-carrito {

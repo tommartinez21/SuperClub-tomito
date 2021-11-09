@@ -20,8 +20,9 @@
     position: relative;
 }
 
-.cont-icons-bar img {
+.cont-icons-bar svg {
     width: 40px;
+    fill: rgba(255, 255, 255, 0.6);
 }
 
 .cont-icons-bar:not(:last-child)::after {
@@ -34,7 +35,16 @@
     bottom: 0;
 }
 
-.cont-icons-bar>* {
-    color: white;
+.cont-icons-bar:hover>*,
+.cont-icons-bar:hover svg {
+    transform: scale(1.1);
+    color: rgba(255, 255, 255, 1);
+    fill: rgba(255, 255, 255, 1);
+}
+
+.cont-icons-bar>*,
+.cont-icons-bar svg {
+    color: rgba(255, 255, 255, 0.6);
     text-align: center;
+    transition: transform 0.3s, color 0.3s, fill 0.3s;
 }
