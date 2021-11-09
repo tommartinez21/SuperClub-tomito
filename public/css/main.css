@@ -15,13 +15,19 @@
 
 body {
   background-color: var(--lightgrey);
-  position: relative;
-  min-height: 100vh;
+}
+
+.bodyfix > main {
+  flex-grow: 1;
 }
 
 main {
   width: 100%;
-  padding-bottom: 64px;
+}
+
+.link-volver {
+  text-decoration: none;
+  color: black;
 }
 
 .cont-product-heroes {

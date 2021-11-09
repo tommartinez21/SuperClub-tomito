@@ -2,12 +2,12 @@
 <html lang="en">
   <%- include('../partials/head') %>
 
-  <body>
+  <body class="bodyfix">
     <%- include('../partials/header') %>
 
     <main>
       <div class="cart-container">
-        <p>← Volver</p>
+        <%- include('../partials/volver') %>
         <h3 class="categoria-cart">Productos en tu Carrito</h3>
 
         <% if (productos) { preciofinal = 0; productos.forEach(producto => { %>
